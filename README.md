@@ -33,7 +33,7 @@ Debian / Ubuntu:
 ```
 [[ `uname -m` == "aarch64" ]] && ARCH="arm64" || ARCH="amd64"
 OS=`uname | tr '[:upper:]' '[:lower:]'`
-wget https://github.com/bwagner5/ec2-replacement-sim/releases/download/v0.0.1/ec2-replacement-sim_0.0.1_${OS}_${ARCH}.deb
+wget https://github.com/bwagner5/ec2-replacement-sim/releases/download/v0.0.1-dirty/ec2-replacement-sim_0.0.1-dirty_${OS}_${ARCH}.deb
 dpkg --install ec2-replacement-sim_0.0.2_linux_amd64.deb
 ec2-replacement-sim --help
 ```
@@ -43,7 +43,7 @@ RedHat:
 ```
 [[ `uname -m` == "aarch64" ]] && ARCH="arm64" || ARCH="amd64"
 OS=`uname | tr '[:upper:]' '[:lower:]'`
-rpm -i https://github.com/bwagner5/ec2-replacement-sim/releases/download/v0.0.1/ec2-replacement-sim_0.0.1_${OS}_${ARCH}.rpm
+rpm -i https://github.com/bwagner5/ec2-replacement-sim/releases/download/v0.0.1-dirty/ec2-replacement-sim_0.0.1-dirty_${OS}_${ARCH}.rpm
 ```
 
 Download Binary Directly:
@@ -51,7 +51,7 @@ Download Binary Directly:
 ```
 [[ `uname -m` == "aarch64" ]] && ARCH="arm64" || ARCH="amd64"
 OS=`uname | tr '[:upper:]' '[:lower:]'`
-wget -qO- https://github.com/bwagner5/ec2-replacement-sim/releases/download/v0.0.1/ec2-replacement-sim_0.0.1_${OS}_${ARCH}.tar.gz | tar xvz
+wget -qO- https://github.com/bwagner5/ec2-replacement-sim/releases/download/v0.0.1-dirty/ec2-replacement-sim_0.0.1-dirty_${OS}_${ARCH}.tar.gz | tar xvz
 chmod +x ec2-replacement-sim
 ```
 
